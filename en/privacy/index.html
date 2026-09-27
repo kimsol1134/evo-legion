@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Privacy Policy · Evo Legion</title>
+<meta name="description" content="How Evo Legion handles your data: what we collect, why, how long we keep it, where it goes, and how to delete it.">
+<link rel="icon" href="../../icon.png">
+<link rel="stylesheet" href="../../style.css">
+<link rel="alternate" hreflang="ko" href="https://kimsol1134.github.io/evo-legion/privacy/">
+<link rel="alternate" hreflang="en" href="https://kimsol1134.github.io/evo-legion/en/privacy/">
+</head>
+<body>
+<header class="site"><div class="bar">
+  <a class="brand" href="../"><img src="../../icon.png" alt="">Evo Legion</a>
+  <nav aria-label="Site">
+    <a href="../privacy/" aria-current="page">Privacy</a>
+    <a href="../terms/">Terms</a>
+    <a href="../support/">Support</a>
+    <a href="../probabilities/">Summon rates</a>
+    <a href="../account-deletion/">Delete account</a>
+    <a class="lang" href="../../privacy/" hreflang="ko" lang="ko">한국어</a>
+  </nav>
+</div></header>
+
+<main>
+<h1>Privacy Policy</h1>
+<p class="meta">Effective September 27, 2026 · Solmatter Inc.</p>
+
+<p>Evo Legion is a mobile game for iOS and Android run by Solmatter Inc. (주식회사 솔매터, “we”), a company based in the Republic of Korea. This policy explains what the game and this website collect, why, how long we keep it, and what you can do about it.</p>
+
+<div class="card">
+<h2 style="border:0;margin-top:0;padding-top:0">The short version</h2>
+<ul>
+  <li>The game never asks for your name, email address, phone number, address, location, contacts or photos. There is no sign-up and no login screen.</li>
+  <li>Your progress and purchases are saved under a <strong>random, anonymous account ID</strong> created the first time you open the game.</li>
+  <li>Apple (App Store) or Google (Google Play) handles payment. We never see your card details.</li>
+  <li><strong>Usage stats are sent only if you say yes.</strong> Crash reports are on by default and you can switch them off in Settings.</li>
+  <li>The iOS version has no ads. It does not use the advertising identifier (IDFA) and does not track you across other companies’ apps or websites.</li>
+  <li>You can erase your account at any time from <strong>Settings → Delete account</strong>.</li>
+</ul>
+</div>
+
+<h2 id="items">1. What we collect, why, and for how long</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Data</th><th>When and how</th><th>Why</th><th>Kept</th></tr></thead>
+<tbody>
+<tr><td>Anonymous account ID (a random ID from Firebase Authentication), plus when it was created and last signed in</td><td>Created automatically on first launch</td><td>To tell accounts apart and save progress, rewards and purchases</td><td>Until you delete the account</td></tr>
+<tr><td>Game progress: stages cleared, species star ranks and fragments, Nebulite balance and history, summon results and pity counts, missions, check-ins and feats, Season Pass progress, battle records (starting values, card picks, result summary)</td><td>When the game talks to our server</td><td>To run the game, settle rewards, catch cheating and answer support requests</td><td>Until you delete the account</td></tr>
+<tr><td>Purchase records: product ID, time of purchase and verification, subscription expiry, status (purchased or refunded), a hash of the transaction ID, Nebulite granted, and an encrypted copy of the store’s transaction identifiers (Apple transaction ID and original transaction ID; Google Play purchase token)</td><td>When you buy, the app sends the store’s signed transaction to our server to be verified</td><td>To confirm payment, deliver items, apply refunds and renewals, and restore purchases</td><td>5 years, as explained in section 6</td></tr>
+<tr><td>A hash of your transfer code, its expiry, and the link between devices that share an account</td><td>When you create or enter a transfer code</td><td>To move your account to a new device</td><td>Codes expire after 7 days or once used; device links until you delete the account</td></tr>
+<tr><td>Crash reports (Firebase Crashlytics): where the error happened (stack trace), device model, OS version, app and content version, memory and storage state, a short log of what the game was doing, and a Crashlytics installation ID</td><td>Sent automatically when the app crashes or hits an error (on by default)</td><td>To find and fix bugs</td><td>90 days</td></tr>
+<tr><td>Usage stats (Firebase Analytics): in-game events such as stage starts and results, card picks, store and summon screen views, and performance samples; device model, OS and language; an app instance ID; approximate region (country or city level) inferred from your IP address</td><td><strong>Only if you agree</strong> (off by default)</td><td>To tune difficulty and rewards</td><td>Up to 14 months</td></tr>
+<tr><td>Remote configuration (Firebase Remote Config): Firebase installation ID, app version, OS version, device language</td><td>Automatically at launch</td><td>To switch certain features off or on without an app update</td><td>Per Google Firebase retention</td></tr>
+<tr><td>Server access logs: IP address, time, request path, the app’s user agent</td><td>Recorded automatically by Google Cloud when the game talks to our server</td><td>Security and troubleshooting</td><td>30 days</td></tr>
+<tr><td>Rate-limit counters for transfer codes (hashed IP address and hashed account ID)</td><td>When you enter a transfer code</td><td>To stop people guessing codes</td><td>1 hour</td></tr>
+<tr><td>Support emails: your email address, your message, and anything you send us (such as a transfer code or an Apple order ID)</td><td>When you email us</td><td>To answer you and handle deletion requests</td><td>3 years after we close the request (Korean e-commerce law on complaint records)</td></tr>
+</tbody>
+</table></div>
+
+<p><strong>What we never collect:</strong> name, date of birth, email address (unless you email us), phone number, postal address, precise location, contacts, photos or files, payment card details, or the advertising identifier (IDFA).</p>
+<p><strong>What stays on your device:</strong> your save files, settings such as sound, language and consent choices, and your sign-in credential (kept in the device’s secure storage). None of these are sent to us; the credential is used only to sign in to Firebase.</p>
+
+<h2 id="apple">2. Purchases on the App Store</h2>
+<ul>
+  <li>On iOS, paid items are sold only through Apple’s In-App Purchase. Apple handles the payment and your payment details. We never receive your Apple Account, name, card number or billing address.</li>
+  <li>After a purchase we receive the transaction Apple has signed: transaction ID, original transaction ID, product ID, purchase date, subscription expiry, whether it was refunded, and the environment. Our server checks Apple’s signature and keeps only the purchase record described in section 1. The signed original is not stored.</li>
+  <li>To make sure a purchase lands in the right account, the app adds a random-looking value derived from your anonymous account ID (Apple calls it an appAccountToken) to the purchase request. It does not reveal who you are.</li>
+  <li>Apple tells our server when a subscription renews or a purchase is refunded (App Store Server Notifications). We use this only to deliver or withdraw items.</li>
+  <li>Whatever Apple collects itself is covered by <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.</li>
+</ul>
+
+<h2 id="android">3. Android only</h2>
+<ul>
+  <li>On Android, Google Play handles payment. We receive the purchase token and order ID and verify and store them the same way (the purchase token is stored encrypted).</li>
+  <li>The Android version is built to support optional rewarded ads (Google AdMob). Only when ads are switched on, and only when you choose to watch one, Google processes data such as the Android advertising ID to serve it, and in some regions asks for your consent first. We do not store the advertising ID.</li>
+</ul>
+
+<h2 id="sharing">4. Who else handles your data</h2>
+<p>We do not sell your personal information or give it to anyone else, except when the law requires us to (for example, a valid request from Korean authorities). Apple and Google, as app stores, collect data from you directly under their own policies.</p>
+<p>These providers process data on our behalf to run the game:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Provider</th><th>What they do for us</th><th>Where</th></tr></thead>
+<tbody>
+<tr><td>Google LLC — Google Cloud (Cloud Run, Cloud SQL, Secret Manager)</td><td>Runs the game server, stores the database, keeps encryption keys</td><td>Republic of Korea (Seoul region, asia-northeast3)</td></tr>
+<tr><td>Google LLC — Google Cloud Logging</td><td>Stores server access logs</td><td>Google data centers (including the US)</td></tr>
+<tr><td>Google LLC — Firebase (Authentication, Crashlytics, Analytics, Remote Config)</td><td>Anonymous sign-in, crash reports, usage stats (if you agree), remote configuration</td><td>Google data centers (including the US)</td></tr>
+</tbody>
+</table></div>
+
+<h2 id="transfer">5. International transfers</h2>
+<p>Korea’s Personal Information Protection Act asks us to spell out data that leaves Korea. These transfers are needed to provide the game to you and are disclosed here.</p>
+<div class="table-wrap"><table>
+<tbody>
+<tr><th>Recipient</th><td>Google LLC (contact: googlekrsupport@google.com; <a href="https://policies.google.com/privacy">Google Privacy Policy</a>)</td></tr>
+<tr><th>Countries</th><td>United States and other countries where Google has data centers</td></tr>
+<tr><th>Data</th><td>Anonymous account ID and sign-in times (Firebase Authentication), crash reports, usage stats (if you agree), remote configuration data, server access logs</td></tr>
+<tr><th>When and how</th><td>Whenever needed while you play, over encrypted connections (HTTPS)</td></tr>
+<tr><th>Purpose and retention</th><td>As listed in section 1</td></tr>
+<tr><th>How to refuse</th><td>Don’t agree to usage stats, or switch them off in Settings. Switch crash reports off in Settings. Anonymous sign-in and the game server are required for online features such as saving progress, the shop and summons; to refuse them, stop playing and ask us to delete your account.</td></tr>
+</tbody>
+</table></div>
+<p class="small">The game database itself is in Seoul, Korea, but the company that operates it, Google LLC, is based in the United States.</p>
+
+<h2 id="retention">6. How long we keep data, and how we delete it</h2>
+<ul>
+  <li><strong>When you delete your account,</strong> we immediately erase your progress, transfer codes, device links and the encrypted store transaction identifiers from our server, delete your anonymous Firebase account, and then the game erases its save files on your device.</li>
+  <li><strong>What the law makes us keep:</strong> Korean e-commerce law requires records of payments and delivered goods to be kept for 5 years. We keep the product ID, times, status, the hash of the transaction ID and the amount granted, but we replace your account ID with a one-way value so the record can no longer be tied to you.</li>
+  <li><strong>Deletion marker:</strong> so that a sign-in token left on an old device cannot recreate a deleted account, we keep a hash of the deleted account ID and the time of deletion for the same period as purchase records.</li>
+  <li><strong>Backups:</strong> copies in automatic database backups disappear when those backups expire (up to 7 days).</li>
+  <li><strong>How:</strong> electronic data is deleted so that it cannot be recovered. We do not keep personal data on paper.</li>
+</ul>
+
+<h2 id="rights">7. Your rights</h2>
+<ul>
+  <li>You can ask to see, correct or delete your data, ask us to stop processing it, or withdraw consent at any time.</li>
+  <li><strong>In the game:</strong> Settings → Delete account; Settings → Usage data (off); Settings → Crash reports (off); Settings → Notifications (off).</li>
+  <li><strong>By email:</strong> <a href="mailto:kimsol@solmatter.kr">kimsol@solmatter.kr</a>. We act on requests within 10 days and let you know the outcome. A parent, guardian or someone you authorize can also ask on your behalf.</li>
+  <li><strong>Finding your account:</strong> accounts are anonymous, so we may ask for something linked to your account, such as a transfer code or an Apple order ID. We will never ask for ID documents. See <a href="../account-deletion/">Delete your account</a> for the steps.</li>
+</ul>
+
+<h2 id="auto">8. SDKs, tracking and cookies</h2>
+<ul>
+  <li>The game includes the Firebase SDKs (Crashlytics, Analytics, Remote Config). Analytics starts switched off and stays off until you agree.</li>
+  <li>We do not show personalized ads, and we do not combine your data with data from other companies’ apps or websites to track you. We do not sell or share personal information for advertising.</li>
+  <li>This website uses no cookies and no analytics. It is served by GitHub Pages, and GitHub may log visitors’ IP addresses for security (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>).</li>
+</ul>
+
+<h2 id="children">9. Children</h2>
+<p>We don’t check ages and we don’t collect names or contact details from anyone. The game processes only the anonymous data it needs to work, and nothing is collected specifically from children under 14. A parent or guardian can ask us to show or delete a child’s account using the contact below, and we will do it promptly.</p>
+
+<h2 id="security">10. How we protect data</h2>
+<ul>
+  <li>All traffic between the game and our servers is encrypted (HTTPS).</li>
+  <li>Store transaction identifiers are encrypted with AES-256-GCM, and the key lives separately in Google Secret Manager.</li>
+  <li>Our database and logs hold hashes of purchase tokens and transaction IDs, never the originals. Transfer codes are never stored in readable form.</li>
+  <li>Server logs contain neither account IDs nor request bodies, and only the people who need operational access have it.</li>
+</ul>
+
+<h2 id="officer">11. Privacy officer</h2>
+<dl class="facts">
+  <dt>Name</dt><dd>Sol Kim (CEO)</dd>
+  <dt>Email</dt><dd><a href="mailto:kimsol@solmatter.kr">kimsol@solmatter.kr</a></dd>
+</dl>
+<p>Send any privacy question, complaint or request to this address.</p>
+
+<h2 id="remedy">12. If you are not satisfied</h2>
+<p>You can also contact these Korean public bodies about a privacy complaint:</p>
+<ul>
+  <li>Personal Information Dispute Mediation Committee: 1833-6972, <a href="https://www.kopico.go.kr">www.kopico.go.kr</a></li>
+  <li>Personal Information Infringement Report Center (KISA): 118, <a href="https://privacy.kisa.or.kr">privacy.kisa.or.kr</a></li>
+  <li>Supreme Prosecutors’ Office: 1301, <a href="https://www.spo.go.kr">www.spo.go.kr</a></li>
+  <li>Korean National Police Agency: 182, <a href="https://ecrm.police.go.kr">ecrm.police.go.kr</a></li>
+</ul>
+<p>If you live elsewhere, you may also have the right to complain to your local data protection authority.</p>
+
+<h2 id="changes">13. Changes to this policy</h2>
+<p>We post changes on this page at least 7 days before they take effect, and announce them in the game when it matters. Changes that significantly affect your rights are posted 30 days ahead.</p>
+<ul>
+  <li>September 27, 2026: first version</li>
+</ul>
+<p class="small">This policy is published in Korean and English. If they differ, the Korean version prevails.</p>
+</main>
+
+<footer class="site-footer"><div class="bar">
+  <p>Solmatter Inc. (주식회사 솔매터) · CEO Sol Kim · Business registration no. 433-87-04342</p>
+  <p>Contact <a href="mailto:kimsol@solmatter.kr">kimsol@solmatter.kr</a></p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>개인정보 처리방침 · 진화 군단</title>
+<meta name="description" content="모바일 게임 진화 군단의 개인정보 처리방침입니다. 처리하는 정보, 보관 기간, 국외 이전, 삭제 방법을 안내합니다.">
+<link rel="icon" href="../icon.png">
+<link rel="stylesheet" href="../style.css">
+<link rel="alternate" hreflang="ko" href="https://kimsol1134.github.io/evo-legion/privacy/">
+<link rel="alternate" hreflang="en" href="https://kimsol1134.github.io/evo-legion/en/privacy/">
+</head>
+<body>
+<header class="site"><div class="bar">
+  <a class="brand" href="../"><img src="../icon.png" alt="">진화 군단</a>
+  <nav aria-label="사이트">
+    <a href="../privacy/" aria-current="page">개인정보 처리방침</a>
+    <a href="../terms/">이용약관</a>
+    <a href="../support/">고객지원</a>
+    <a href="../probabilities/">확률 정보</a>
+    <a href="../account-deletion/">계정 삭제</a>
+    <a class="lang" href="../en/privacy/" hreflang="en" lang="en">English</a>
+  </nav>
+</div></header>
+
+<main>
+<h1>개인정보 처리방침</h1>
+<p class="meta">시행일 2026년 9월 27일 · 주식회사 솔매터</p>
+
+<p>주식회사 솔매터(이하 “회사”)는 모바일 게임 「진화 군단」(iOS·Android, 이하 “게임”)을 운영하면서 「개인정보 보호법」 등 관련 법령을 지킵니다. 이 방침은 게임과 이 웹사이트에서 어떤 정보를, 왜, 얼마 동안 처리하는지와 이용자가 어떻게 권리를 행사할 수 있는지 설명합니다.</p>
+
+<div class="card">
+<h2 style="border:0;margin-top:0;padding-top:0">한눈에 보기</h2>
+<ul>
+  <li>게임은 이름·이메일·전화번호·주소·위치·연락처·사진을 받지 않습니다. 회원가입이나 로그인 화면도 없습니다.</li>
+  <li>게임은 처음 실행할 때 만들어지는 <strong>무작위 익명 계정 ID</strong>로 진행과 구매를 저장합니다.</li>
+  <li>결제는 Apple(App Store) 또는 Google(Google Play)이 처리합니다. 회사는 카드 번호 등 결제 수단 정보를 받지 않습니다.</li>
+  <li><strong>이용 통계는 동의한 경우에만</strong> 보냅니다. 오류 보고는 기본으로 켜져 있고, 설정에서 끌 수 있습니다.</li>
+  <li>iOS판에는 광고가 없습니다. 광고 식별자(IDFA)를 쓰지 않으며, 다른 회사의 앱·웹사이트에 걸친 추적을 하지 않습니다.</li>
+  <li>게임 안 <strong>설정 → 계정 삭제</strong>로 언제든 계정과 진행 기록을 지울 수 있습니다.</li>
+</ul>
+</div>
+
+<h2 id="items">1. 처리하는 개인정보와 목적, 보유 기간</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>항목</th><th>수집 시점·방법</th><th>목적</th><th>보유 기간</th></tr></thead>
+<tbody>
+<tr><td>익명 계정 ID(Firebase Authentication이 만든 무작위 ID), 계정 생성·로그인 시각</td><td>첫 실행 시 자동 생성</td><td>계정 식별, 진행·보상·구매 저장</td><td>계정 삭제 시까지</td></tr>
+<tr><td>게임 진행 기록: 스테이지 클리어, 종 성급·조각, 성운석 잔액과 지급·사용 내역, 소환 결과와 천장 횟수, 미션·출석·업적, 시즌 패스 진행, 전투 기록(시작값·카드 선택 기록·결과 요약)</td><td>게임 중 서버와 통신할 때</td><td>게임 제공, 보상 정산, 부정행위 확인, 문의 처리</td><td>계정 삭제 시까지</td></tr>
+<tr><td>구매 기록: 상품 ID, 구매·검증 시각, 구독 만료 시각, 거래 상태(구매·환불), 거래 ID의 해시값, 지급한 성운석 수량, 암호화해 보관하는 스토어 거래 식별자(Apple 거래 ID·원거래 ID, Google Play 구매 토큰)</td><td>구매할 때 앱이 스토어가 서명한 거래 정보를 서버로 보내 검증</td><td>결제 확인, 상품 지급, 환불·구독 갱신 반영, 구매 복원</td><td>아래 5항의 예외에 따라 5년</td></tr>
+<tr><td>계정 이전 코드의 해시값과 만료 시각, 기기 간 계정 연결 기록</td><td>이전 코드를 만들거나 입력할 때</td><td>새 기기로 계정 이전</td><td>코드는 7일 뒤 만료되거나 사용 즉시 소멸, 연결 기록은 계정 삭제 시까지</td></tr>
+<tr><td>오류 보고(Firebase Crashlytics): 오류 위치(스택), 기기 모델, OS 버전, 앱·콘텐츠 버전, 메모리·저장공간 상태, 오류 직전의 게임 동작 기록, Crashlytics 설치 ID</td><td>앱이 멈추거나 오류가 날 때 자동 전송(기본 켜짐)</td><td>오류 원인 파악과 수정</td><td>90일</td></tr>
+<tr><td>이용 통계(Firebase Analytics): 스테이지 시작·결과, 카드 선택, 상점·소환 화면 보기, 성능 표본 등 게임 내 행동, 기기 모델·OS·언어, 앱 인스턴스 ID, IP 주소로 추정한 대략적 지역(국가·도시 수준)</td><td><strong>이용자가 동의한 경우에만</strong>(기본 꺼짐)</td><td>난이도·보상 개선</td><td>최대 14개월</td></tr>
+<tr><td>원격 설정(Firebase Remote Config): Firebase 설치 ID, 앱 버전, OS 버전, 기기 언어</td><td>앱 실행 시 자동</td><td>일부 기능을 앱 업데이트 없이 끄고 켜기</td><td>Google Firebase 보존 기준에 따름</td></tr>
+<tr><td>서버 접속 기록: IP 주소, 접속 시각, 요청 경로, 앱의 사용자 에이전트</td><td>서버와 통신할 때 Google Cloud가 자동 기록</td><td>보안, 장애 대응</td><td>30일</td></tr>
+<tr><td>이전 코드 입력 횟수 제한용 값(IP 주소·계정 ID를 해시한 값)</td><td>이전 코드를 입력할 때</td><td>코드 무작위 대입 방지</td><td>1시간</td></tr>
+<tr><td>고객 문의: 이메일 주소, 문의 내용, 이용자가 보낸 자료(이전 코드, Apple 주문 번호 등)</td><td>이메일로 문의할 때</td><td>문의 응대, 삭제 요청 처리</td><td>처리 후 3년(「전자상거래법」상 소비자 불만·분쟁 처리 기록)</td></tr>
+</tbody>
+</table></div>
+
+<p><strong>회사가 받지 않는 정보:</strong> 이름, 생년월일, 이메일 주소(문의하는 경우 제외), 전화번호, 주소, 정밀 위치, 연락처, 사진·파일, 결제 카드 정보, 광고 식별자(IDFA).</p>
+<p><strong>기기에만 저장되는 정보:</strong> 게임 저장 파일, 소리·언어·동의 여부 같은 설정값, 로그인 자격 증명(기기의 보안 저장소). 이 정보는 회사 서버로 보내지 않으며, 로그인 자격 증명은 Firebase에 로그인할 때만 쓰입니다.</p>
+
+<h2 id="apple">2. App Store 결제</h2>
+<ul>
+  <li>iOS판의 유료 아이템은 Apple의 인앱 결제로만 판매합니다. 결제와 결제 수단 정보는 Apple이 처리하며, 회사는 Apple 계정, 이름, 카드 번호, 청구지 주소를 받지 않습니다.</li>
+  <li>구매가 끝나면 회사는 Apple이 서명한 거래 정보(거래 ID, 원거래 ID, 상품 ID, 구매 시각, 구독 만료 시각, 환불 여부, 결제 환경)를 받습니다. 서버는 서명을 검증한 뒤 1항의 구매 기록만 남기며, 서명된 원본은 저장하지 않습니다.</li>
+  <li>구매를 올바른 계정에 연결하기 위해, 앱은 익명 계정 ID에서 계산한 무작위 형태의 값(appAccountToken)을 구매 요청에 넣어 Apple에 전달합니다. 이 값으로는 이용자의 신원을 알 수 없습니다.</li>
+  <li>Apple은 구독 갱신·환불 같은 거래 상태 변화를 서버 알림(App Store Server Notifications)으로 회사에 보냅니다. 회사는 이를 상품 지급과 회수에만 씁니다.</li>
+  <li>Apple이 직접 처리하는 정보는 <a href="https://www.apple.com/kr/legal/privacy/">Apple 개인정보 처리방침</a>을 따릅니다.</li>
+</ul>
+
+<h2 id="android">3. Android판에만 해당하는 내용</h2>
+<ul>
+  <li>Android판의 결제는 Google Play가 처리하며, 회사는 구매 토큰과 주문 식별자를 받아 1항과 같은 방식으로 검증·보관합니다(구매 토큰은 암호화 보관).</li>
+  <li>Android판은 선택형 보상 광고(Google AdMob)를 넣을 수 있게 만들어져 있습니다. 광고 기능이 켜진 경우에만, 이용자가 광고 보기를 고를 때 Google이 광고 제공을 위해 Android 광고 ID 등을 처리하며, 지역에 따라 동의 화면이 먼저 나옵니다. 회사는 광고 ID를 저장하지 않습니다.</li>
+</ul>
+
+<h2 id="sharing">4. 제3자 제공과 처리 위탁</h2>
+<p>회사는 이용자의 개인정보를 제3자에게 제공하지 않습니다. 다만 법령에 따라 수사기관 등이 적법한 절차로 요구하는 경우는 예외입니다. Apple과 Google은 앱 마켓 운영자로서 이용자에게서 직접 정보를 받으며, 그 처리는 각 회사의 방침을 따릅니다.</p>
+<p>게임 운영을 위해 다음과 같이 처리를 맡깁니다.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>수탁자</th><th>맡기는 업무</th><th>처리 위치</th></tr></thead>
+<tbody>
+<tr><td>Google LLC — Google Cloud(Cloud Run, Cloud SQL, Secret Manager)</td><td>게임 서버 운영, 데이터베이스 보관, 암호 키 보관</td><td>대한민국(서울 리전, asia-northeast3)</td></tr>
+<tr><td>Google LLC — Google Cloud Logging</td><td>서버 접속 기록 보관</td><td>Google 데이터센터(미국 등)</td></tr>
+<tr><td>Google LLC — Firebase(Authentication, Crashlytics, Analytics, Remote Config)</td><td>익명 로그인, 오류 보고, 이용 통계(동의 시), 원격 설정</td><td>Google 데이터센터(미국 등)</td></tr>
+</tbody>
+</table></div>
+
+<h2 id="transfer">5. 개인정보의 국외 이전</h2>
+<p>「개인정보 보호법」 제28조의8에 따라 국외로 이전되는 개인정보를 알려 드립니다. 아래 이전은 게임이라는 계약을 이행하는 데 필요한 처리 위탁·보관이며, 이 방침으로 공개합니다.</p>
+<div class="table-wrap"><table>
+<tbody>
+<tr><th>이전받는 자</th><td>Google LLC (연락처: googlekrsupport@google.com, <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>)</td></tr>
+<tr><th>이전 국가</th><td>미국 및 Google 데이터센터가 있는 국가</td></tr>
+<tr><th>이전 항목</th><td>익명 계정 ID와 로그인 시각(Firebase Authentication), 오류 보고, 이용 통계(동의한 경우), 원격 설정 정보, 서버 접속 기록</td></tr>
+<tr><th>이전 시기·방법</th><td>게임을 이용하는 동안 필요할 때마다 암호화된 네트워크(HTTPS)로 전송</td></tr>
+<tr><th>이용 목적·보유 기간</th><td>1항의 각 항목과 같음</td></tr>
+<tr><th>거부 방법과 효과</th><td>이용 통계는 동의하지 않거나 설정에서 끄면 보내지 않습니다. 오류 보고는 설정에서 끌 수 있습니다. 익명 로그인과 서버 통신은 진행 저장·상점·소환 같은 온라인 기능에 필수이므로, 거부하려면 게임 이용을 멈추고 계정 삭제를 요청하시면 됩니다.</td></tr>
+</tbody>
+</table></div>
+<p class="small">게임 서버의 데이터베이스는 대한민국(서울)에 있습니다. 다만 이를 운영하는 Google LLC는 미국 회사입니다.</p>
+
+<h2 id="retention">6. 보유 기간과 파기</h2>
+<ul>
+  <li><strong>계정 삭제:</strong> 게임에서 계정을 삭제하면 서버의 진행 기록, 이전 코드, 계정 연결 기록, 암호화 보관한 스토어 거래 식별자를 즉시 지우고, Firebase의 익명 계정을 삭제한 뒤, 기기의 게임 저장 파일을 지웁니다.</li>
+  <li><strong>법령에 따른 예외:</strong> 「전자상거래 등에서의 소비자보호에 관한 법률」에 따라 대금 결제와 재화 공급에 관한 기록(상품 ID, 시각, 거래 상태, 거래 ID의 해시값, 지급 수량)은 5년간 보관합니다. 이때 계정 ID는 되돌릴 수 없는 값으로 바꿔 누구의 기록인지 알 수 없게 합니다.</li>
+  <li><strong>삭제 확인 기록:</strong> 삭제된 계정의 기기에 남은 로그인 토큰이 계정을 다시 만들지 못하도록, 계정 ID의 해시값과 삭제 시각을 구매 기록과 같은 기간 보관합니다.</li>
+  <li><strong>백업:</strong> 데이터베이스 자동 백업에 남은 사본은 백업 보존 기간(최대 7일)이 지나면 자동으로 지워집니다.</li>
+  <li><strong>파기 방법:</strong> 전자 파일은 복구할 수 없는 방법으로 삭제합니다. 회사는 개인정보를 종이로 보관하지 않습니다.</li>
+</ul>
+
+<h2 id="rights">7. 이용자의 권리와 행사 방법</h2>
+<ul>
+  <li>이용자는 언제든 자신의 개인정보 열람, 정정, 삭제, 처리 정지를 요구하고, 동의를 철회할 수 있습니다.</li>
+  <li><strong>게임 안에서:</strong> 설정 → 계정 삭제 / 설정 → 사용 데이터 보내기(이용 통계) 끄기 / 설정 → 오류 보고 보내기 끄기 / 설정 → 알림 받기 끄기.</li>
+  <li><strong>이메일로:</strong> <a href="mailto:kimsol@solmatter.kr">kimsol@solmatter.kr</a>. 요청을 받은 날부터 10일 이내에 처리하고 결과를 알려 드립니다. 법정대리인이나 위임받은 대리인도 요청할 수 있습니다.</li>
+  <li><strong>본인 확인:</strong> 게임 계정은 익명이므로, 계정을 찾기 위해 이전 코드나 Apple 주문 번호처럼 계정과 연결된 정보를 요청할 수 있습니다. 신분증 같은 신원 정보는 요구하지 않습니다. 자세한 절차는 <a href="../account-deletion/">계정 삭제 안내</a>에 있습니다.</li>
+</ul>
+
+<h2 id="auto">8. 자동 수집 장치의 설치·운영과 거부</h2>
+<ul>
+  <li>게임에는 Firebase SDK(Crashlytics, Analytics, Remote Config)가 들어 있습니다. Analytics는 동의 전에는 수집하지 않도록 꺼진 상태로 시작합니다.</li>
+  <li>회사는 이용자 맞춤형 광고를 하지 않고, 다른 회사의 앱·웹사이트에서 수집한 정보와 결합해 이용자를 추적하지 않습니다. 개인정보를 판매하지 않습니다.</li>
+  <li>이 웹사이트는 쿠키와 분석 도구를 쓰지 않습니다. 웹사이트는 GitHub Pages에서 제공되며, GitHub이 보안을 위해 방문자의 IP 주소를 기록할 수 있습니다(<a href="https://docs.github.com/ko/site-policy/privacy-policies/github-general-privacy-statement">GitHub 개인정보 처리방침</a>).</li>
+</ul>
+
+<h2 id="children">9. 아동의 개인정보</h2>
+<p>회사는 이용자의 나이를 확인하지 않으며 이름·연락처 같은 신원 정보를 받지 않습니다. 게임 제공에 필요한 익명 정보만 처리하고, 만 14세 미만 아동을 대상으로 정보를 따로 수집하지 않습니다. 만 14세 미만 아동의 법정대리인은 아동 계정의 열람·삭제를 아래 연락처로 요청할 수 있으며, 회사는 지체 없이 처리합니다.</p>
+
+<h2 id="security">10. 안전성 확보 조치</h2>
+<ul>
+  <li>모든 통신은 암호화(HTTPS)합니다.</li>
+  <li>스토어 거래 식별자는 AES-256-GCM으로 암호화해 보관하고, 암호 키는 별도의 비밀 저장소(Google Secret Manager)에 둡니다.</li>
+  <li>데이터베이스와 로그에는 구매 토큰·거래 ID의 원문 대신 해시값만 남깁니다. 이전 코드도 원문을 저장하지 않습니다.</li>
+  <li>서버 로그에 계정 ID와 요청 본문을 남기지 않으며, 운영 권한은 필요한 최소 인원에게만 줍니다.</li>
+</ul>
+
+<h2 id="officer">11. 개인정보 보호책임자</h2>
+<dl class="facts">
+  <dt>책임자</dt><dd>김솔(대표이사)</dd>
+  <dt>이메일</dt><dd><a href="mailto:kimsol@solmatter.kr">kimsol@solmatter.kr</a></dd>
+</dl>
+<p>개인정보 관련 문의, 불만 처리, 피해 구제는 위 책임자에게 연락해 주세요.</p>
+
+<h2 id="remedy">12. 권익침해 구제 방법</h2>
+<p>개인정보 침해에 대한 상담이나 분쟁 해결이 필요하면 아래 기관에 문의할 수 있습니다.</p>
+<ul>
+  <li>개인정보분쟁조정위원회: 국번 없이 1833-6972, <a href="https://www.kopico.go.kr">www.kopico.go.kr</a></li>
+  <li>개인정보침해신고센터(한국인터넷진흥원): 국번 없이 118, <a href="https://privacy.kisa.or.kr">privacy.kisa.or.kr</a></li>
+  <li>대검찰청: 국번 없이 1301, <a href="https://www.spo.go.kr">www.spo.go.kr</a></li>
+  <li>경찰청: 국번 없이 182, <a href="https://ecrm.police.go.kr">ecrm.police.go.kr</a></li>
+</ul>
+
+<h2 id="changes">13. 방침의 변경</h2>
+<p>이 방침을 바꾸면 시행 7일 전부터 이 페이지에 알리고, 필요한 경우 게임 안에서도 알립니다. 이용자의 권리에 중요한 변경은 30일 전에 알립니다.</p>
+<ul>
+  <li>2026년 9월 27일: 제정</li>
+</ul>
+</main>
+
+<footer class="site-footer"><div class="bar">
+  <p>주식회사 솔매터 · 대표 김솔 · 사업자등록번호 433-87-04342</p>
+  <p>문의 <a href="mailto:kimsol@solmatter.kr">kimsol@solmatter.kr</a></p>
+</div></footer>
+</body>
+</html>
