@@ -26,7 +26,7 @@
 
 <main>
 <h1>Privacy Policy</h1>
-<p class="meta">Effective September 27, 2026 · Solmatter Inc.</p>
+<p class="meta">Effective October 10, 2026 (announced October 2, 2026) · Solmatter Inc.</p>
 
 <p>Evo Legion is a mobile game for iOS and Android run by Solmatter Inc. (주식회사 솔매터, “we”), a company based in the Republic of Korea. This policy explains what the game and this website collect, why, how long we keep it, and what you can do about it.</p>
 
@@ -37,7 +37,7 @@
   <li>Your progress and purchases are saved under a <strong>random, anonymous account ID</strong> created the first time you open the game.</li>
   <li>Apple (App Store) or Google (Google Play) handles payment. We never see your card details.</li>
   <li><strong>Usage stats are sent only if you say yes.</strong> Crash reports are on by default and you can switch them off in Settings.</li>
-  <li>The iOS version has no ads. It does not use the advertising identifier (IDFA) and does not track you across other companies’ apps or websites.</li>
+  <li>The only ads are <strong>rewarded ads you choose to watch</strong> (iOS version). The first time, you are asked whether to allow tracking; the ad reward is the same if you say no.</li>
   <li>You can erase your account at any time from <strong>Settings → Delete account</strong>.</li>
 </ul>
 </div>
@@ -52,6 +52,7 @@
 <tr><td>A hash of your transfer code, its expiry, and the link between devices that share an account</td><td>When you create or enter a transfer code</td><td>To move your account to a new device</td><td>Codes expire after 7 days or once used; device links until you delete the account</td></tr>
 <tr><td>Crash reports (Firebase Crashlytics): where the error happened (stack trace), device model, OS version, app and content version, memory and storage state, a short log of what the game was doing, and a Crashlytics installation ID</td><td>Sent automatically when the app crashes or hits an error (on by default)</td><td>To find and fix bugs</td><td>90 days</td></tr>
 <tr><td>Usage stats (Firebase Analytics): in-game events such as stage starts and results, card picks, store and summon screen views, and performance samples; device model, OS and language; an app instance ID; approximate region (country or city level) inferred from your IP address</td><td><strong>Only if you agree</strong> (off by default)</td><td>To tune difficulty and rewards</td><td>Up to 14 months</td></tr>
+<tr><td>Ad reward records: ad session ID, placement (result bonus, summon, Abyss continue), date, whether the reward was granted, the ad transaction ID sent by Google AdMob</td><td>When you choose to watch a rewarded ad, and when Google tells our server the ad was completed</td><td>To grant the ad reward, apply the daily limit and prevent double grants</td><td>Until the account is deleted (the ad transaction ID remains, detached from any account)</td></tr>
 <tr><td>Remote configuration (Firebase Remote Config): Firebase installation ID, app version, OS version, device language</td><td>Automatically at launch</td><td>To switch certain features off or on without an app update</td><td>Per Google Firebase retention</td></tr>
 <tr><td>Server access logs: IP address, time, request path, the app’s user agent</td><td>Recorded automatically by Google Cloud when the game talks to our server</td><td>Security and troubleshooting</td><td>30 days</td></tr>
 <tr><td>Rate-limit counters for transfer codes (hashed IP address and hashed account ID)</td><td>When you enter a transfer code</td><td>To stop people guessing codes</td><td>1 hour</td></tr>
@@ -59,7 +60,7 @@
 </tbody>
 </table></div>
 
-<p><strong>What we never collect:</strong> name, date of birth, email address (unless you email us), phone number, postal address, precise location, contacts, photos or files, payment card details, or the advertising identifier (IDFA).</p>
+<p><strong>What we never collect:</strong> name, date of birth, email address (unless you email us), phone number, postal address, precise location, contacts, photos or files, payment card details, or the advertising identifier (IDFA). The advertising identifier is processed by Google directly (section 8) and never reaches our server.</p>
 <p><strong>What stays on your device:</strong> your save files, settings such as sound, language and consent choices, and your sign-in credential (kept in the device’s secure storage). None of these are sent to us; the credential is used only to sign in to Firebase.</p>
 
 <h2 id="apple">2. Purchases on the App Store</h2>
@@ -78,7 +79,7 @@
 </ul>
 
 <h2 id="sharing">4. Who else handles your data</h2>
-<p>We do not sell your personal information or give it to anyone else, except when the law requires us to (for example, a valid request from Korean authorities). Apple and Google, as app stores, collect data from you directly under their own policies.</p>
+<p>We do not sell your personal information or give it to anyone else, except when the law requires us to (for example, a valid request from Korean authorities). Apple and Google, as app stores, and Google as the ad provider (Google AdMob, section 8), collect data from you directly under their own policies.</p>
 <p>These providers process data on our behalf to run the game:</p>
 <div class="table-wrap"><table>
 <thead><tr><th>Provider</th><th>What they do for us</th><th>Where</th></tr></thead>
@@ -95,10 +96,10 @@
 <tbody>
 <tr><th>Recipient</th><td>Google LLC (contact: googlekrsupport@google.com; <a href="https://policies.google.com/privacy">Google Privacy Policy</a>)</td></tr>
 <tr><th>Countries</th><td>United States and other countries where Google has data centers</td></tr>
-<tr><th>Data</th><td>Anonymous account ID and sign-in times (Firebase Authentication), crash reports, usage stats (if you agree), remote configuration data, server access logs</td></tr>
+<tr><th>Data</th><td>Anonymous account ID and sign-in times (Firebase Authentication), crash reports, usage stats (if you agree), remote configuration data, server access logs, and the data Google AdMob processes when you watch a rewarded ad (section 8)</td></tr>
 <tr><th>When and how</th><td>Whenever needed while you play, over encrypted connections (HTTPS)</td></tr>
 <tr><th>Purpose and retention</th><td>As listed in section 1</td></tr>
-<tr><th>How to refuse</th><td>Don’t agree to usage stats, or switch them off in Settings. Switch crash reports off in Settings. Anonymous sign-in and the game server are required for online features such as saving progress, the shop and summons; to refuse them, stop playing and ask us to delete your account.</td></tr>
+<tr><th>How to refuse</th><td>Don’t choose to watch an ad, and no ad data is sent. Don’t agree to usage stats, or switch them off in Settings. Switch crash reports off in Settings. Anonymous sign-in and the game server are required for online features such as saving progress, the shop and summons; to refuse them, stop playing and ask us to delete your account.</td></tr>
 </tbody>
 </table></div>
 <p class="small">The game database itself is in Seoul, Korea, but the company that operates it, Google LLC, is based in the United States.</p>
@@ -123,7 +124,11 @@
 <h2 id="auto">8. SDKs, tracking and cookies</h2>
 <ul>
   <li>The game includes the Firebase SDKs (Crashlytics, Analytics, Remote Config). Analytics starts switched off and stays off until you agree.</li>
-  <li>We do not show personalized ads, and we do not combine your data with data from other companies’ apps or websites to track you. We do not sell or share personal information for advertising.</li>
+  <li>The iOS version includes the Google Mobile Ads SDK (Google AdMob) and Google’s consent SDK (UMP). An ad plays only when you choose to watch a rewarded ad; before that the game makes no ad requests. There are no forced ads.</li>
+  <li>When you watch an ad, Google directly collects your IP address (used to estimate a general location), device information, ad views and interactions, diagnostics and your consent choices, to serve and measure ads and to prevent fraud. We do not receive this data. See <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a>.</li>
+  <li><strong>Tracking:</strong> before your first ad, iOS asks whether to allow tracking. Only if you allow it does Google use the advertising identifier (IDFA) to show personalized ads and combine it with data from other companies’ apps and websites. If you do not allow it you see non-personalized ads, and the ad reward is the same. You can change this at any time in iOS Settings → Privacy &amp; Security → Tracking.</li>
+  <li>In the European Economic Area, the United Kingdom, Switzerland and some US states a consent screen appears before ads, and you can change your choice under “Ad privacy” in the game’s Settings. US residents can use it to opt out of the sale or sharing of personal information for advertising.</li>
+  <li>We do not sell personal information ourselves.</li>
   <li>This website uses no cookies and no analytics. It is served by GitHub Pages, and GitHub may log visitors’ IP addresses for security (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>).</li>
 </ul>
 
@@ -159,6 +164,7 @@
 <p>We post changes on this page at least 7 days before they take effect, and announce them in the game when it matters. Changes that significantly affect your rights are posted 30 days ahead.</p>
 <ul>
   <li>September 27, 2026: first version</li>
+  <li>October 10, 2026: added optional rewarded ads (Google AdMob) and the tracking permission request on iOS; updated the short version and sections 1, 4, 5 and 8 (announced October 2, 2026)</li>
 </ul>
 <p class="small">This policy is published in Korean and English. If they differ, the Korean version prevails.</p>
 </main>
